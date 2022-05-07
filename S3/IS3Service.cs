@@ -1,6 +1,3 @@
-﻿using ADAIConnect.Domain.Response;
-using ADAIConnect.Domain.SeedWork.Enums;
-using ADAIConnect.Domain.ViewModels;
 using Amazon.S3.Model;
 using System;
 using System.Collections.Generic;
@@ -8,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADAIConnect.Infrastructure.Service.S3
+namespace Infrastructure.Service.S3
 {
     public interface IS3Service
     {
