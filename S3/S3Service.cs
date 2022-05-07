@@ -1,5 +1,3 @@
-﻿using ADAIConnect.Domain.Response;
-using ADAIConnect.Domain.SeedWork.Enums;
 using Amazon;
 using Amazon.Runtime;
 using Amazon.S3;
@@ -11,7 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ADAIConnect.Infrastructure.Service.S3
+namespace Infrastructure.Service.S3
 {
     public class S3Service : IS3Service
     {
