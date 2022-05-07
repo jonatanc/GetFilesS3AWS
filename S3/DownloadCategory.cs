@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADAIConnect.Domain.SeedWork.Enums
+namespace Domain.SeedWork.Enums
 {
     public enum DownloadCategory
     {
-        EstudosBiblicos,
-        Lideranca,
-        Ministerios,
-        Pastoral,
+        Category1,
+        Category2,
+        Category3,
+        Category4,
         Site
     }
 
@@ -21,16 +21,16 @@ namespace ADAIConnect.Domain.SeedWork.Enums
         {
             switch (downloadCategory)
             {
-                case DownloadCategory.EstudosBiblicos:
-                    return "connect/estudos-biblicos/";
-                case DownloadCategory.Lideranca:
-                    return "connect/lideranca/";
-                case DownloadCategory.Ministerios:
-                    return "connect/ministerios/";
-                case DownloadCategory.Pastoral:
-                    return "connect/pastoral/";
+                case DownloadCategory.Category1:
+                    return "Bucket/Category1/";
+                case DownloadCategory.Category2:
+                    return "Bucket/Category2/";
+                case DownloadCategory.Category3:
+                    return "Bucket/Category3/";
+                case DownloadCategory.Category4:
+                    return "Bucket/Category4/";
                 case DownloadCategory.Site:
-                    return "connect/site/";
+                    return "Bucket/site/";
                 default:
                     return "NO VALUE GIVEN";
             }
@@ -40,14 +40,14 @@ namespace ADAIConnect.Domain.SeedWork.Enums
         {
             switch (downloadCategory)
             {
-                case DownloadCategory.EstudosBiblicos:
-                    return "EstudosBiblicos";
-                case DownloadCategory.Lideranca:
-                    return "Lideranca";
-                case DownloadCategory.Ministerios:
-                    return "Ministerios";
-                case DownloadCategory.Pastoral:
-                    return "Pastoral";
+                case DownloadCategory.Category1:
+                    return "Category1";
+                case DownloadCategory.Category2:
+                    return "Category2";
+                case DownloadCategory.Category3:
+                    return "Category3";
+                case DownloadCategory.Category4:
+                    return "Category4";
                 case DownloadCategory.Site:
                     return "Site";
                 default:
